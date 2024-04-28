@@ -428,6 +428,15 @@ www.google.*##.g:has(a[href*="tik2mate.com"])
 www.google.*##a[href*="tik2mate.com"]:upward(1)
 duckduckgo.com##ol.react-results--main a[href*="tik2mate.com"]:upward(article)
 duckduckgo.com##.tile-wrap a[href*="tik2mate.com"]:upward(.tile)
+bing.com#?#[id$="results"] cite:has-text(soccerguru.live):upward(li)
+bing.com#?#a[href*="soccerguru.live"]:upward(li[data-idx][style^="width"])
+bing.com#?#[id*="video"] > [href*="soccerguru.live"]:upward(.dg_u)
+bing.com##.news-card[url*="soccerguru.live"]
+www.google.*##.g:has(a[href*="soccerguru.live"])
+www.google.*##a[href*="soccerguru.live"]:upward(1)
+www.google.*##[data-lpage*="soccerguru.live"]
+duckduckgo.com##ol.react-results--main a[href*="soccerguru.live"]:upward(article)
+duckduckgo.com##.tile-wrap a[href*="soccerguru.live"]:upward(.tile)
 
 !--- Domain Blocking ---!
 ! Info: https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#domain
@@ -485,6 +494,7 @@ duckduckgo.com##.tile-wrap a[href*="tik2mate.com"]:upward(.tile)
 ||tiktoknowatermark.app^$all
 ||ttdl.online^$all
 ||tik2mate.com^$all
+||soccerguru.live^$all
 
 !--- Remove Tracking from URLs ---!
 ! Info: https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#removeparam
